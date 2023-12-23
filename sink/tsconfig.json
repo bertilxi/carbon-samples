@@ -1,0 +1,4 @@
+{
+  "extends": "hydrogen/config/tsconfig.json",
+  "include": ["**/*", "./node_modules/carbon/**/*"]
+}

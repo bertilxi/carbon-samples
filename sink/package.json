@@ -1,0 +1,14 @@
+{
+  "name": "sink",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "WATCH=true tsx watch main.ts"
+  },
+  "dependencies": {
+    "carbon": "github:bertilxi/carbon"
+  },
+  "devDependencies": {
+    "hydrogen": "github:bertilxi/hydrogen"
+  }
+}
