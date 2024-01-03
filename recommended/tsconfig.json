@@ -1,5 +1,11 @@
 {
   "extends": "carbon/config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
   "include": ["**/*"],
   "exclude": ["node_modules"]
 }

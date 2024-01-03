@@ -1,0 +1,36 @@
+{
+  "name": "recommended",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx main.ts",
+    "dev": "WATCH=true tsx watch main.ts",
+    "lint": "eslint . --ext ts,tsx --cache",
+    "format": "prettier --write .",
+    "release": "release-it",
+    "husky": "husky install",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "carbon": "github:carbonyde/carbon",
+    "hydrogen": "github:carbonyde/hydrogen#1.1.0"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "skipChecks": true,
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "conventionalcommits",
+        "infile": "changelog.md"
+      }
+    }
+  }
+}

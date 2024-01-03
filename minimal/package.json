@@ -6,9 +6,7 @@
     "dev": "WATCH=true tsx watch main.ts"
   },
   "dependencies": {
-    "carbon": "github:bertilxi/carbon"
-  },
-  "devDependencies": {
-    "hydrogen": "github:bertilxi/hydrogen"
+    "carbon": "github:carbonyde/carbon",
+    "hydrogen": "github:carbonyde/hydrogen#1.1.0"
   }
 }
